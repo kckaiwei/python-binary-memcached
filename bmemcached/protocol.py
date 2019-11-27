@@ -487,6 +487,7 @@ class Protocol(threading.local):
         # pipeline N-1 getkq requests, followed by a regular getk to uncork the
         # server
         o_keys = keys
+        print(keys)
         keys, last = keys[:-1], str_to_bytes(keys[-1])
         if six.PY2:
             msg = ''
