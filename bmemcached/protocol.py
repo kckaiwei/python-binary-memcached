@@ -488,6 +488,7 @@ class Protocol(threading.local):
         # server
         o_keys = keys
         print(keys)
+        print(type(keys))
         keys, last = keys[:-1], str_to_bytes(keys[-1])
         if six.PY2:
             msg = ''
